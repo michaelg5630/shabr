@@ -6,9 +6,10 @@ html,body{
 body{
     color: #FB0200;
     background-color: #00CCFE;
+    background-size: cover;
 }
 
 
 p{
-    font-size: 40px;
+    font-size: 20px;
 }
