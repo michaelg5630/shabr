@@ -1,15 +1,41 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     color: #FB0200;
     background-color: #00CCFE;
     background-size: cover;
 }
 
+<<<<<<< HEAD
 
 p{
     font-size: 20px;
+=======
+p {
+    font-size: 40px;
+>>>>>>> 7e3c3e0d75ac95cd2e7454b0b34ae060f1ee2530
+}
+    .tw {
+        width: 100%;
+        padding: 40px 0;
+}
+    .th {
+        height: 100%;
+    }
+
+
+#title h1,
+#title h2,
+#title h3 {
+    color: #c4d7f1;
+}
+
+.title {
+    background: linear-gradient( rgba(15, 63, 173, 0.3), rgba(0, 127, 218, 1)), url('img/balloon-3.jpg') center no-repeat fixed;
+    background-size: cover;
+    text-align: center;
 }
