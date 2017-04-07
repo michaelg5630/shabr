@@ -1,2 +1,14 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    color: #FB0200;
+    background-color: #00CCFE;
+}
 
 
+p{
+    font-size: 40px;
+}
