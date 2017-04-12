@@ -6,18 +6,16 @@ body {
 
 body {
     color: #FB0200;
-    background-color: #00CCFE;
+    background-color: #00FFFF;
     background-size: cover;
 }
 
-<<<<<<< HEAD
 
-p{
-    font-size: 20px;
-=======
+
+
 p {
     font-size: 40px;
->>>>>>> 7e3c3e0d75ac95cd2e7454b0b34ae060f1ee2530
+
 }
     .tw {
         width: 100%;
