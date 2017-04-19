@@ -12,6 +12,7 @@
         body {
             padding-top: 50px;
         }
+        
         .navbar-fixed-top {
             background-color: white;
         }
@@ -27,42 +28,53 @@
             <li><a href="#nav">nav.css</a></li>
         </ul>
 
-<!-- 
+        <div class="tab-content">
+            <div id="index" class="tab-pane fade in active">
+                <script src="https://gist-it.appspot.com/github/michaelg5630/shabr/raw/master/index.html?footer=0"></script>
+            </div>
+            <div id="custom" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/michaelg5630/shabr/raw/master/custom.css?footer=0"></script>
+            </div>
+            <div id="nav" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/michaelg5630/shabr/raw/master/nav.css?footer=0"></script>
+            </div>
+
+            <!-- 
 URL structure:
 https://gist-it.appspot.com/github/OWNERS-USERNAME/REPO-NAME/raw/master/PATH/TO/FILE?footer=0
 
 EXAMPLE: 
 https://gist-it.appspot.com/github/bmuellerhstat/shabr/raw/master/index.html?footer=0
 -->
-        <div class="tab-content">
-            <div id="index" class="tab-pane fade in active">
-                <script src="URL"></script>
-            </div>
-            <div id="custom" class="tab-pane fade">
-                <script src="URL"></script>
-            </div>
-            <div id="nav" class="tab-pane fade">
-                <script src="URL"></script>
+            <div class="tab-content">
+                <div id="index" class="tab-pane fade in active">
+                    <script src="URL"></script>
+                </div>
+                <div id="custom" class="tab-pane fade">
+                    <script src="URL"></script>
+                </div>
+                <div id="nav" class="tab-pane fade">
+                    <script src="URL"></script>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        $(document).ready(function() {
-            $(".nav-tabs a").click(function() {
-                $(this).tab('show');
+        <script>
+            $(document).ready(function() {
+                $(".nav-tabs a").click(function() {
+                    $(this).tab('show');
+                });
+                $('.nav-tabs a').on('shown.bs.tab', function(event) {
+                    var x = $(event.target).text(); // active tab
+                    var y = $(event.relatedTarget).text(); // previous tab
+                    $(".act span").text(x);
+                    $(".prev span").text(y);
+                });
+
+                // custom code font-size (uncomment below to see effect)
+                // $('pre').css('font-size','16px');
             });
-            $('.nav-tabs a').on('shown.bs.tab', function(event) {
-                var x = $(event.target).text(); // active tab
-                var y = $(event.relatedTarget).text(); // previous tab
-                $(".act span").text(x);
-                $(".prev span").text(y);
-            });
-            
-            // custom code font-size (uncomment below to see effect)
-            // $('pre').css('font-size','16px');
-        });
-    </script>
+        </script>
 
 </body>
 
