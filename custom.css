@@ -5,23 +5,27 @@ body {
 }
 
 body {
-    color: #FB0200;
-    background-color: #00CCFE;
+    color: #CC0000;
+    background-color: #3399FF;
     background-size: cover;
 }
 
- HEAD
 
-p{
+
+
+p {
     font-size: 40px;
+    font-family: 'Oswald', sans-serif;
 }
+
+
 
 
 
 #title h1,
 #title h2,
 #title h3 {
-    color: #c4d7f1;
+    color: #000000;
 }
 
 #title {
@@ -29,3 +33,10 @@ p{
     background-size: cover;
     text-align: center;
 }
+
+.carousel-inner > item > img
+.carousel-inner > item > a > img{
+    width: 100%;
+    margin: auto;
+}
+
